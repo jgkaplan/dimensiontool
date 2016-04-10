@@ -24,6 +24,23 @@ function createMainWindow() {
 			accelerator: 'Command+Q',
 			selector: 'terminate:'
 		}]
+	}, {
+		label: 'Window',
+		submenu: [{
+			label: 'Minimize',
+        	accelerator: 'Command+M',
+        	selector: 'performMiniaturize:'
+		}, {
+			label: 'Transparent',
+			type: 'checkbox',
+			checked: false,
+			click: function(){
+				checked = !checked;
+				if(checked){
+					win.
+				}
+			}
+		}]
 	}];
 	const menu = Menu.buildFromTemplate(template);
 	Menu.setApplicationMenu(menu);

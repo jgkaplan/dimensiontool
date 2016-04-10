@@ -1,4 +1,4 @@
-# dimensiontool
+# Dimension Tool
 
 > A tool for choosing window dimensions.
 
