@@ -30,16 +30,6 @@ function createMainWindow() {
 			label: 'Minimize',
         	accelerator: 'Command+M',
         	selector: 'performMiniaturize:'
-		}, {
-			label: 'Transparent',
-			type: 'checkbox',
-			checked: false,
-			click: function(){
-				checked = !checked;
-				if(checked){
-					win.
-				}
-			}
 		}]
 	}];
 	const menu = Menu.buildFromTemplate(template);
