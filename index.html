@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Dimension Tool</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1><span id='width'>600</span>x<span id='height'>400</span></h1>
+		</header>
+	</div>
+	<script>
+		window.$ = window.jQuery = require('./jquery.min.js');
+		$('#width').text($(window).width());
+		$('#height').text($(window).height());
+		$(window).resize(function() {
+			$('#width').text($(window).width());
+			$('#height').text($(window).height());
+		});
+	</script>
+</body>
+
+</html>
