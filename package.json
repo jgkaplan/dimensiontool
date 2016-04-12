@@ -13,7 +13,7 @@
     "test": "xo",
     "start": "electron .",
     "build": "electron-packager . --out=dist --app-version=1.0.0 --icon=icon.icns --prune --asar --overwrite --all",
-    "buildMac": "electron-packager . --out=dist --app-version=1.0.0 --icon=icon.icns --prune --asar --platform=darwin --arch=x64"
+    "buildMac": "electron-packager . --out=dist --app-version=1.0.0 --icon=icon.icns --prune --asar --ignore --platform=darwin --arch=x64"
   },
   "files": [
     "index.js",
